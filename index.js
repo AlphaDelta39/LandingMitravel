@@ -5,19 +5,17 @@ const burgerLine2 = document.querySelector('.one');
 const burgerLine1 = document.querySelector('.two');
 const HeaderAnimation = document.querySelector('.Header__ContentContainer')
 
+
+
+
+
 let element = window;
 let info;
 let counter=1;
 
     BurgerMenu.addEventListener('click', StartAnimation);
     element.addEventListener("scroll", getinfo);
-function handleResize() {
-    // Обработка изменения размера экрана
-    console.log('Размер экрана изменился!');
-}
 
-// Устанавливаем обработчик при загрузке страницы
-    window.addEventListener('resize', handleResize);
 
 function StartAnimation(){
 
@@ -31,7 +29,7 @@ function StartAnimation(){
 function getinfo(){
 
     info = document.documentElement.scrollTop;
-    console.log(info);
+
     HeaderAnimation.classList.toggle('active');
 
 if(info == 0 ){
@@ -49,3 +47,16 @@ if(info > 0 & counter == 1 ){
     
 }
 
+
+const childElement = document.querySelector('.ForSearchButton__container button')
+
+window.addEventListener('load', updateChildMargin);
+window.addEventListener('resize', updateChildMargin);
+
+function updateChildMargin() {
+    const parentElement = window.innerWidth;
+    const parentWidth = parentElement.clientWidth;
+    const width = parentElement/36;
+    const okruglenie = Math.round(width) + 40;
+    childElement.style.setProperty('--parent-width', okruglenie + 'px');
+}
