@@ -349,7 +349,7 @@ cursor: pointer;
 }
 
 .search{
-    max-width: 1020px;
+    max-width: 1066px;
     width: 100%;
     height: 100%;
     padding-left: 54px;
@@ -357,13 +357,234 @@ cursor: pointer;
     padding-right: 100px;
     display: block;
     margin-right: auto;
+    appearance: none;
+    outline: none;
+    border: none;
 }
 
 
 .search:focus{
+    border: none;
+    appearance: none;
+    border-style: none;
     outline: none;
     padding-left: 54px;
     font-size: 16px;
 }
 
 
+.Container__Videoswiper{
+    max-width: 502px;
+    max-height: 410px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.Video__container{
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.buttonswiper__container{
+    max-height: 120px;
+    max-width: 502px;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.Swiper{
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    transform: translateX(var(--changes-transform, 0px , 0px));
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    transition: 0.1s ease;
+    max-height: 280px;
+    z-index: 5;
+}
+
+@media all and (max-width: 1000px) {
+.Swiper{
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    transform: translateX(var(--changes-transform, 0px , 0px));
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    transition: none;
+}
+}
+
+.Swiper__item{
+    min-width: 502px;
+    max-width: 502px;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    max-height: 280px;
+    z-index: 5;
+}
+
+.Swiper__item2{
+    min-width: 502px;
+    max-width: 502px;
+    height: 100%;
+    background-color: green;
+    width: 100%;
+    max-height: 280px;
+    z-index: 5;
+}
+
+.Swiper__item3{
+    min-width: 502px;
+    max-width: 502px;
+    height: 100%;
+    width: 100%;
+    max-height: 280px;
+    z-index: 5;
+}
+
+
+.Swiper__item::before{
+    position: absolute;
+    content: "Wonderful Mountains";
+    background: #73AFBA;
+    height: 120px;
+    width: 502px;
+    top: 280px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: SFProDisplay;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.182px;
+    text-transform: uppercase; 
+    z-index: 5;
+    text-align: center;
+}
+
+.Swiper__item2::before{
+    position: absolute;
+    content: "DEEP FOREST";
+    background: #73AFBA;
+    height: 120px;
+    width: 502px;
+    top: 280px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-family: SFProDisplay;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.182px;
+    text-transform: uppercase; 
+    left: 502px;
+    z-index: 5;
+}
+
+.Swiper__item3::before{
+    position: absolute;
+    content: "incredible ocean";
+    background: #73AFBA;
+    height: 120px;
+    width: 502px;
+    top: 280px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-family: SFProDisplay;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.182px;
+    text-transform: uppercase; 
+    left: 1004px;
+    z-index: 5;
+}
+
+
+.just_colorblock{
+    position: absolute;
+    background-color: #73AFBA;
+    max-width: 502px;
+    width: 100px;
+    height: 120px;
+    top: 280px;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 6;
+}
+
+.just_colorblock:nth-child(2){
+    position: absolute;
+    background-color: #73AFBA;
+    max-width: 502px;
+    width: 100px;
+    height: 120px;
+    top: 280px;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 400px;
+    z-index: 6;
+
+}
+
+
+
+/* Button right */
+
+
+
+.Btn_elemtLeft{
+    width: 32px;
+    height: 32px;
+    margin-left: 40px;
+    cursor: pointer;
+    z-index: 6;
+}
+
+.Btn_elemtRight{
+    width: 32px;
+    height: 32px;
+    margin-left: 30px;
+    z-index: 6;
+    cursor: pointer;
+}
